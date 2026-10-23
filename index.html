@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Attendance → SF2 Transfer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Attendance → SF2 transfer</h1>
+      <p class="mut">
+        Everything runs in your browser, your files are not uploaded anywhere.
+        Drop the attendance export (e.g. <i>attendance_October_2026.xlsx</i>)
+        together with your SF2 file(s). The matching month tab is filled in and
+        every other part of the SF2 workbook is left untouched.
+      </p>
+      <div id="drop">
+        <p><b>Click to choose files</b> or drag them here</p>
+        <p class="mut">
+          Attendance export + SF2-12_ICT_CSS.xlsx and/or SF2-12-ICT_PROG.xlsx
+        </p>
+        <input id="fi" type="file" accept=".xlsx" multiple class="hide" />
+      </div>
+      <div class="chips" id="chips"></div>
+      <div id="out"></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
